@@ -1,0 +1,47 @@
+export const notes = [
+  {
+    id: 1,
+    title: "DSA Unit 1",
+    subject: "DSA",
+    uploader: "Rahul Sharma",
+    rating: 4.8,
+    downloads: 152,
+    semester: 3,
+  },
+  {
+    id: 2,
+    title: "DBMS Notes",
+    subject: "DBMS",
+    uploader: "Priya Singh",
+    rating: 4.7,
+    downloads: 120,
+    semester: 4,
+  },
+  {
+    id: 3,
+    title: "Operating System",
+    subject: "OS",
+    uploader: "Aman Gupta",
+    rating: 4.9,
+    downloads: 180,
+    semester: 4,
+  },
+  {
+  id: 4,
+  title: "Java Notes",
+  subject: "Java",
+  uploader: "Aditya",
+  rating: 4.5,
+  downloads: 100,
+  semester: 3,
+},
+{
+  id: 5,
+  title: "JS Notes",
+  subject: "Ja",
+  uploader: "Aditya",
+  rating: 4.5,
+  downloads: 100,
+  semester: 5,
+}
+];

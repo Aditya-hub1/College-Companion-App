@@ -1,20 +1,26 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+
+import Dashboard from "./pages/Dashboard";
+import NotesHub from "./pages/NotesHub";
+import EventHub from "./pages/EventHub";
+import PlacementDashboard from "./pages/PlacementDashboard";
+import Profile from "./pages/Profile";
+
 function App() {
   return (
-    <div className="container">
-      <h1>🎓 College Companion</h1>
+    <BrowserRouter>
+      <Navbar />
 
-      <div className="card">
-        <h2>Welcome Aditya 👋</h2>
-        <p>Your all-in-one student platform</p>
-      </div>
-
-      <div className="features">
-        <div className="feature">📚 Notes Hub</div>
-        <div className="feature">📅 Event Hub</div>
-        <div className="feature">💼 Placement Dashboard</div>
-        <div className="feature">📝 Assignments</div>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/notes" element={<NotesHub />} />
+        <Route path="/events" element={<EventHub />} />
+        <Route path="/placements" element={<PlacementDashboard />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
