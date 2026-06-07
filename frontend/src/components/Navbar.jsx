@@ -63,6 +63,19 @@ function Navbar() {
         </li>
 
         <li>
+  <Link
+    className={
+      location.pathname === "/assignments"
+        ? "active-link"
+        : ""
+    }
+    to="/assignments"
+  >
+    Assignments
+  </Link>
+</li>
+
+        <li>
           <Link
             className={
               location.pathname === "/profile"

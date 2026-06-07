@@ -7,6 +7,9 @@ import NotesHub from "./pages/NotesHub";
 import EventHub from "./pages/EventHub";
 import PlacementDashboard from "./pages/PlacementDashboard";
 import Profile from "./pages/Profile";
+import Assignments from "./pages/Assignments";
+
+
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
         <Route path="/notes" element={<NotesHub />} />
         <Route path="/events" element={<EventHub />} />
         <Route path="/placements" element={<PlacementDashboard />} />
+        <Route path="/assignments" element={<Assignments />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
